@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container d-flex  justify-content-center ">
+
+
+
+        
+       <div class="row col-lg-5 col-sm-12 justify-content-center min-vh-100 bg ">
+           
+                <input class="  w-100 fs-1 text-end p-4" type="text" placeholder="0" id="display">
+
+                <div class="row m-1 mt-3  ps-4">
+                    <div class="col-3 ">
+                        <button  class="btn h-75 pt-2 btn-dark w-75 rounded-circle AA" onclick="clearScrean()">AC</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle  AA"  onclick="clickValue('%')">%</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle  AA"onclick="clickValue('/')" >/</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2 btn-dark w-75 rounded-circle AA " onclick="deleteValue()" >D</button>
+                    </div>
+                </div>
+                <div class="row m-1 flex-grow-1 ps-4">
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2 btn-dark w-75 rounded-circle "onclick="clickValue('7')" >7</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle "onclick="clickValue('8')" >8</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle " onclick="clickValue('9')">9</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle AA "onclick="clickValue('*')" >*</button>
+                    </div>
+                </div>
+                <div class="row  m-1 flex-grow-1 ps-4">
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle "onclick="clickValue('4')" >4</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle " onclick="clickValue('5')">5</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle " onclick="clickValue('6')">6</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn  h-75 pt-2 btn-dark w-75 rounded-circle  AA"onclick="clickValue('-')" >-</button>
+                    </div>
+                </div>
+                <div class="row  m-1 flex-grow-1 ps-4">
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle "onclick="clickValue('1')" >1</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle " onclick="clickValue('2')">2</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle "onclick="clickValue('3')" >3</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle  AA"onclick="clickValue('+')" >+</button>
+                    </div>
+                </div>
+                <div class="row  m-1 mb-3 ps-4 ">
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2  btn-dark w-75 rounded-circle "onclick="clickValue('00')" >00</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2   btn-dark w-75 rounded-circle "onclick="clickValue('0')" >0</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn  h-75 pt-2 btn-dark w-75 rounded-circle " onclick="clickValue('.')">.</button>
+                    </div>
+                    <div class="col-3">
+                        <button  class="btn h-75 pt-2 text-dark calculet btn-dark w-75 rounded-circle  " onclick="calculatValue()" >=</button>
+                    </div>
+                </div>
+            
+            
+       </div>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"> </script>
+    <script src="hart.js"></script>
+</body>
+</html>
